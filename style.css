@@ -1,0 +1,98 @@
+body {
+  font-family: "Outfit", sans-serif;
+  background-image: url("/assets/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  margin: 0;
+  margin-top: 18%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  margin-bottom: 10vw;
+  align-content: center;
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Info {
+  text-align: left;
+  color: white;
+}
+
+.Actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.Actions .button1,
+.Actions .button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #151557;
+  border-radius: 20px;
+  padding: 3px 15px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.quatro {
+  display: flex;
+  align-items: center;
+}
+
+.gif {
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quatro .gif img {
+  max-width: 250%;
+  height: auto;
+}
+
+.Actions .button1:hover,
+.Actions .button2:hover {
+  background-color: #0f0f40;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .quatro {
+    justify-content: center;
+  }
+  .gif {
+    width: 22vh;
+  }
+
+  .Text {
+    text-align: center;
+    max-width: 100%;
+    margin-top: 20vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+  .Actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
